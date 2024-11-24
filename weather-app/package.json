@@ -1,0 +1,30 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "homepage": "https://github.com/ajbenc/weather-app.git",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --open",
+    "build": "webpack --config webpack.prod.js",
+    "dev": "webpack serve --config webpack.config.js --open",
+    "deploy": "npm run build && gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "weather app project",
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "dotenv-webpack": "^8.1.0",
+    "gh-pages": "^6.1.1",
+    "html-loader": "^5.1.0",
+    "html-webpack-plugin": "^5.6.0",
+    "path-browserify": "^1.0.1",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0",
+    "webpack-merge": "^6.0.1"
+  }
+}
